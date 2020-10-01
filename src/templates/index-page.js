@@ -12,8 +12,7 @@ export const IndexPageTemplate = ({
   heading,
   subheading,
   mainpitch,
-  description,
-  intro,
+  description
 }) => (
   <div>
     <div
@@ -86,17 +85,17 @@ export const IndexPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div>
-                {intro.blurbs && <Features gridItems={intro.blurbs} />}
+                {/* <Features gridItems={intro.blurbs} /> */}
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
-                      See all products
+                      See all lessons
                     </Link>
                   </div>
                 </div>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
+                    Latest Posts
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
